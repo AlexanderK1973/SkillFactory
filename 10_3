@@ -1,0 +1,23 @@
+class Client:
+    def __init__(self, pib, balans):
+        self.pib = pib
+        self.balans = balans
+        
+
+clients = [
+        {
+            'Имя': "Сидоров Иван",
+            'Баланс': '50 руб.',
+        },
+        {
+            'Имя': "Иван Петров",
+            'Баланс': '70 руб.',
+        },
+]
+for client in clients:
+    client_info = Client(pib=client.get("Имя"),
+                   balans=client.get("Баланс"))
+
+    print(f'Клиент "{client_info.pib}", '
+          f'Баланс: {client_info.balans}'
+          f'\n_______________________')
