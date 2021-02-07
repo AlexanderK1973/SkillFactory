@@ -1,0 +1,10 @@
+{% extends 'flatpages\default.html' %}
+
+{% block title %} Title 1: About Us {% endblock title %}
+
+{% block content %}
+<h1><u>Хотите узнать кто мы?</u></h1><br>
+<h1>{{ flatpage.content }}</h1>
+<br><h3><i>и еще раз:</i></h3><h6>(как просили в пункте 3 задания)</h6> <br>
+<h1>{{ flatpage.content }}</h1>
+{% endblock content %}
